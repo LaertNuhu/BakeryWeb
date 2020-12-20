@@ -480,8 +480,8 @@
     .phone,
     .address,
     .email {
-        display: grid;
-        grid-template-columns: auto;
+        display: flex;
+        flex-direction: column;
     }
     
     .grid-item:not(:last-child) {
@@ -697,6 +697,11 @@
         .grid-item:not(:last-child) {
             padding-bottom: 50px;
             border-right: none;
+        }
+        .connect-note {
+            padding: 40px 10px;
+            background-color: #10080b;
+            text-align: center;
         }
     }
     
